@@ -1,20 +1,20 @@
 function add(a, b) {
-    let result = a + b;
+    const result = a + b;
     return result;
 }
 
 function subtract(a, b) {
-    let result = a - b;
+    const result = a - b;
     return result;
 }
 
 function multiply(a, b) {
-    let result = a * b;
+    const result = a * b;
     return result;
 }
 
 function divide(a, b) {
-    let result = a / b;
+    const result = a / b;
     return result;
 }
 
@@ -32,4 +32,21 @@ function operate(op, a, b) {
     } else if(op = "/") {
         divide(a, b)
     }
-}
+};
+
+const plus = document.getElementById("add");
+const minus = document.getElementById("subtract");
+const times = document.getElementById("multiply");
+const division = document.getElementById("divide");
+const display = document.getElementsByClassName("display")
+//when you click a number
+//empty display
+//populate display with number
+const numbtns = document.querySelectorAll('.num')
+
+numbtns.forEach(btn => {
+    btn.addEventListener('click', function(){
+        display.textContent = " ";
+        console.log("test")
+    })
+})

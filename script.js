@@ -46,7 +46,6 @@ const numbtns = document.querySelectorAll('.num')
 
 numbtns.forEach(btn => {
     btn.addEventListener('click', function(){
-        display.textContent = " ";
-        console.log("test")
+        display[0].textContent = btn.id;
     })
 })
